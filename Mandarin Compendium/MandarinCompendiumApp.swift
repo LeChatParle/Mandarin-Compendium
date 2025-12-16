@@ -9,10 +9,10 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Mandarin_CompendiumApp: App {
+struct MandarinCompendiumApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Item.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
