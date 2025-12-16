@@ -1,10 +1,3 @@
-//
-//  Mandarin_CompendiumUITests.swift
-//  Mandarin CompendiumUITests
-//
-//  Created by 范康 on 2025-12-16.
-//
-
 import XCTest
 
 final class MCUITests: XCTestCase {
