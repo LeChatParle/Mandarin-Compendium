@@ -1,0 +1,31 @@
+### Swift ###
+secrets.json
+
+# Xcode user/workspace files
+xcuserdata/
+*.xcuserstate
+
+# Derived data & build products
+DerivedData/
+build/
+
+# SwiftPM
+.swiftpm/
+.build/
+
+# CocoaPods (if you use it)
+Pods/
+
+# Carthage (if you use it)
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# Misc
+*.swp
+*.orig
+.DS_Store

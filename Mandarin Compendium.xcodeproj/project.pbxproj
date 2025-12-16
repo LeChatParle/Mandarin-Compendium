@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AFE9F1B42EF1D9210046BBBA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AFE9F1B32EF1D9210046BBBA /* .swiftlint.yml */; };
+		AFE9F1B62EF1D9390046BBBA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AFE9F1B52EF1D9390046BBBA /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AFE9F18B2EF1D61F0046BBBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		AFE9F1792EF1D61E0046BBBA /* Mandarin Compendium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mandarin Compendium.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE9F18A2EF1D61F0046BBBA /* Mandarin CompendiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mandarin CompendiumTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE9F1942EF1D61F0046BBBA /* Mandarin CompendiumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mandarin CompendiumUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE9F1B32EF1D9210046BBBA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AFE9F1B52EF1D9390046BBBA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +95,8 @@
 		AFE9F1702EF1D61E0046BBBA = {
 			isa = PBXGroup;
 			children = (
+				AFE9F1B52EF1D9390046BBBA /* .gitignore */,
+				AFE9F1B32EF1D9210046BBBA /* .swiftlint.yml */,
 				AFE9F17B2EF1D61E0046BBBA /* Mandarin Compendium */,
 				AFE9F18D2EF1D61F0046BBBA /* Mandarin CompendiumTests */,
 				AFE9F1972EF1D61F0046BBBA /* Mandarin CompendiumUITests */,
@@ -231,6 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE9F1B42EF1D9210046BBBA /* .swiftlint.yml in Resources */,
+				AFE9F1B62EF1D9390046BBBA /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +455,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_STRICT_MEMORY_SAFETY = YES;
 			};
 			name = Debug;
 		};
@@ -497,6 +510,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_STRICT_MEMORY_SAFETY = YES;
 			};
 			name = Release;
 		};
