@@ -19,13 +19,42 @@ struct HomeView: View {
 		VStack {
 			Text("Grammar")
 				.font(.largeTitle.bold())
-				.accessibilityIdentifier("screen_home")
-			
-			Text("A1")
-			Text("A2")
+				
+			NavigationStack { // A Level
+				VStack(alignment: .leading) {
+					HStack {
+						NavigationLink {
+							A1View()
+						} label: {
+							Text("A1")
+								.frame(width: 175, height: 75)
+								.font(.title)
+								.foregroundColor(.white)
+								.background(.blue)
+								.clipShape(RoundedRectangle(cornerRadius: 10))
+								.contentShape(RoundedRectangle(cornerRadius: 10))
+						}
+						.buttonStyle(.plain)
+						
+						NavigationLink {
+							A2View()
+						} label: {
+							Text("A2")
+								.frame(width: 175, height: 75)
+								.font(.title)
+								.foregroundColor(.white)
+								.background(.blue)
+								.clipShape(RoundedRectangle(cornerRadius: 10))
+								.contentShape(RoundedRectangle(cornerRadius: 10))
+						}
+						.buttonStyle(.plain)
+					}
+					Spacer()
+				}
+			}
 		}
-		.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
 		.navigationTitle(Text("Grammar"))
+		.accessibilityIdentifier("screen_home")
 		#if os(iOS)
 		.scrollContentBackground(.hidden)
 		#endif

@@ -11,5 +11,7 @@ struct ContentView: View {
 			Tab("Knowledge", systemImage: "book") { KnowledgeView() }
 			Tab("Settings", systemImage: "gear") { SettingsView() }
 		}
-    }
+		.tabViewStyle(.sidebarAdaptable)
+		.labelStyle(.titleAndIcon)
+	}
 }

@@ -18,10 +18,11 @@ struct CharacterView: View {
 		VStack {
 			Text("Characters")
 				.font(.largeTitle.bold())
-				.accessibilityIdentifier("screen_characters")
+				
 		}
 		.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
 		.navigationTitle(Text("Characters"))
+		.accessibilityIdentifier("screen_characters")
 		#if os(iOS)
 		.scrollContentBackground(.hidden)
 		#endif
