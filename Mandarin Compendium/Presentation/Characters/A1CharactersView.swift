@@ -1,32 +1,20 @@
 import SwiftUI
-import SwiftData
 
-struct CharacterView: View {
+struct A1CharactersView: View {
 	var body: some View {
-		#if os(macOS)
-		ScrollView {
-			coreCharacterView
-		}
-		#endif
-
-		#if os(iOS)
-		coreCharacterView
-		#endif
+		coreA1CharactersView
 	}
 	
-	private var coreCharacterView: some View {
-		VStack {
-			Text("Characters")
-				.font(.largeTitle.bold())
-			
-			NavigationStack { // A Level
+	private var coreA1CharactersView: some View {
+		ScrollView {
+			NavigationStack {
 				VStack(alignment: .leading) {
 					HStack {
 						NavigationLink {
-							A1CharactersView()
+							Wo3View()
 						} label: {
-							Text("A1 Characters")
-								.frame(width: 357, height: 75)
+							Text("我")
+								.frame(width: 100, height: 75)
 								.font(.title)
 								.foregroundColor(.white)
 								.background(.blue)
@@ -38,11 +26,10 @@ struct CharacterView: View {
 					Spacer()
 				}
 			}
-				
 		}
 		.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-		.navigationTitle(Text("Characters"))
-		.accessibilityIdentifier("screen_characters")
+		.navigationTitle(Text("A1 Characters"))
+		.accessibilityIdentifier("screen_A1C")
 		#if os(iOS)
 		.scrollContentBackground(.hidden)
 		#endif

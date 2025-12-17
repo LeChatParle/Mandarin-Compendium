@@ -8,11 +8,15 @@ struct PronounsView: View {
 	
 	private var corePronounsView: some View {
 		ScrollView {
+			Text("All languages have grammar, so let's get started with our very first lesson!")
+				.font(.body)
+				.padding()
+			
 			Text("In Mandarin, there are six primary pronouns that can be used as-is in the singular or with a suffix to indicate plurality.")
 				.font(.body)
 				.padding()
 			
-			CustomGridView()
+			PronounGridView()
 			
 			Text("Notice how to make plural pronouns, you can just add 们. While you can do this for pronouns, make note that other words will not be different between singular and plural!")
 				.font(.body)
@@ -31,7 +35,7 @@ struct PronounsView: View {
 	}
 }
 
-struct CustomGridView: View {
+struct PronounGridView: View {
 	var body: some View {
 		Grid {
 			// Header Row
